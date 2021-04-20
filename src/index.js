@@ -19,9 +19,12 @@ const getRecipes = () => {
 
 const renderRecipe = (recipe) => {
     const recipeLink = document.querySelector('.recipe-link')
-    
+    const navbarCarouselDiv = document.querySelector('#navbar-header-carousel')
+
     recipeLink.addEventListener('click', () => {
         console.log('Clicky')
+        navbarCarouselDiv.innerHTML = ''
+        
     })
 }
 
